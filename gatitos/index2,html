@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        .outer-container {
+            width: 800px;
+            height: 400px;
+            position: relative;
+        }
+        .inner-container {
+            border: 2px solid red;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .rectangle {
+            border: 2px solid green;
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+        .circle {
+            border: 2px solid orange;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            right: 25px;
+        }
+        .text {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="rectangle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="text">hola mundo</div>
+    </div>
+</body>
+</html>
